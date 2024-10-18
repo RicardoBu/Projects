@@ -1,0 +1,140 @@
+
+body {
+    background-color: #f8f0e3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#map {
+    height: 400px; /* Ajuste a altura conforme necessário */
+    width: 100%; /* O mapa ocupará 100% da largura do contêiner */
+    margin-top: 20px;
+    border: 2px solid #ddd;
+}
+/* Define a altura fixa para as imagens */
+
+.container {
+    margin-bottom: 40px;
+}
+
+
+.image-container {
+    height: 200px; /* Ajuste a altura conforme necessário */
+    overflow: hidden; /* Para esconder partes da imagem que ultrapassarem */
+    display: flex; /* Para centralizar as imagens */
+    justify-content: center; /* Para centralizar horizontalmente */
+    align-items: center; /* Para centralizar verticalmente */
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+.image-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.image-container img {
+    height: 100%; /* A imagem ocupará 100% da altura do contêiner */
+    width: auto; /* Manter a proporção da imagem */
+    border: 3px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
+
+.image-container p {
+    display: none; /* Oculta o parágrafo inicialmente */
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.row.text-center img {
+    margin-bottom: 15px;
+}
+
+
+.lightbox {
+    display: none; /* Ocultar por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fundo preto com opacidade */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Certifique-se de que está na frente */
+}
+
+
+
+.lightbox img {
+    width: 600px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    object-fit: cover; /* Redimensiona a imagem para cobrir a área mantendo a proporção */
+}
+
+.lightbox-description {
+    color: white; /* Cor do texto */
+    text-align: center;
+    margin-top: 15px; /* Espaçamento acima do texto */
+}
+
+
+.close-button {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001; /* Certifique-se de que o botão está na frente */
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.btn-danger {
+    background-color: red;
+    border-color: red;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+
+}
+
+/* Efeito hover no botão */
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+

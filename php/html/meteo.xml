@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tempo>
+<cidade>
+<nome>Lisboa</nome>
+<estado>Nublado</estado>
+<maxima>10</maxima>
+<minima>-1</minima>
+</cidade>
+<cidade>
+<nome>Porto</nome>
+<estado>Chuvoso</estado>
+<maxima>7</maxima>
+<minima>-3</minima>
+</cidade>
+<cidade>
+<nome>Coimbra</nome>
+<estado>Nublado</estado>
+<maxima>12</maxima>
+<minima>5</minima>
+</cidade>
+<cidade>
+<nome>Faro</nome>
+<estado>Sol</estado>
+<maxima>10</maxima>
+<minima>3</minima>
+</cidade>
+</tempo>

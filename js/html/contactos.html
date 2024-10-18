@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contactos </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+    
+    <link href="../css/estilos.css" rel="stylesheet">
+    
+   
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+     <style>
+        
+        
+     </style>
+    
+</head>
+
+<body >
+
+    <nav class="nav nav-tabs bg-dark fixed-top">
+        
+        <a class="nav-link" href="indice.html">Voltar ao Indice</a>
+        <a class="nav-link" href="orcamento.html">Orcamentos</a>
+        
+      </nav>
+   
+    
+
+   
+                
+           
+   <div class="container">
+    <div class="row">
+        <div class="caixa1" class="col-sm-6">
+            <h1 >CONTACTOS</h1>
+            <br>
+            <form action="" method="" id="Formulario" name="" >
+                <h3>PREENCHA OS SEGUINTES CAMPOS:</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <h5>NOME:</h5>
+                        </td>
+                        <td style="font-size:20px;"><input class="textbox" type="text" name="nome" maxlength="30" size="20"
+                                id="nome" value="" placeholder="O seu nome" required> *</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>APELIDO:</h5>
+                        </td>
+                        <td style="font-size:20px;"><input class="textbox" type="text" name="apelido" maxlength="30"
+                                size="20" id="apelido" value="" placeholder="O seu apelido" required> *</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>TELEMÓVEL:</h5>
+                        </td>
+                        <td style="font-size:20px;"><input class="textbox" type="text" name="telemovel" maxlength="9"
+                                size="9" id="telemovel" value="" placeholder="O seu número de telemóvel" required> *
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>EMAIL:</h5>
+                        </td>
+                        <td style="font-size:20px;"><input class="textbox" type="text" name="email" maxlength="20" size="9"
+                                id="email" value="" placeholder="O seu email" required> *
+                        </td>
+                        
+                    <tr>
+                        <td>
+                            <h5>DATA:</h5>
+                        </td>
+                        <td style="font-size:20px;"><input type="date" name="" id="data"> *</td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td> <h5><b>MOTIVO DO CONTACTO DA REUNIAO</b></h5> 
+                            </td>
+                            <td style="font-size:20px;"><textarea rows="4" type="text" id="motivo"  required>  </textarea>*
+                        </tr>
+                        <td colspan="2">
+                            <p>(*) Os campos marcados com um asterisco são obrigatórios.</p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <div class="botoes">
+                    <!--  <input type="submit" name="Botao enviar" class="botao cinza" value="SUBMETER">   --> 
+                    
+                    <input type="submit" name="Botao enviar" class="botao cinza" value="ENVIAR" onclick="validate(this)">
+                    
+                </div>
+            </form>
+           
+            
+            
+        </div>
+        <div id="divMapa" class="col-sm-6" style="margin-top: 50px;">
+            Partida: <input id="start" type="textbox"  maxlength="9"
+            size="9"value=""> 
+            Destino: <input id="end" type="textbox" maxlength="9"
+            size="9" value="">
+            
+            <button id="geoButton" onclick="calculateRoute()">Localizar</button>
+         <br/><br/><br/>
+         <div id="mapa" style="position:relative;float:left;width:650px;height:575px"></div>
+         <div id="rota" style="position:relative;float:left;width:450px;"></div>
+    
+        </div>
+
+    </div>
+    
+
+   </div> 
+    
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
+<script src="../js/contactos.js"></script>
+
+
+
+</body>
+
+</html>
